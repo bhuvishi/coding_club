@@ -28,6 +28,7 @@ Run your server on your localhost
 	python3 manage.py runserver
 
 Zappa deploy
+
 	zappa init
 	zappa deploy dev
 
