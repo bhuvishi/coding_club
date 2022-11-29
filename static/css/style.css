@@ -16,6 +16,7 @@ a:hover{ text-decoration: underline;}
 .tp_hme1{ float:left; width:75px; font: bold 11px/15px arial; color:#666768; margin:28px 0px 0px 30px; text-decoration:none;}
 .tp_are{ clear:left; float:left; margin:206px 0px 0px 336px;}
 .tp_bg2{  display:inline; float:left; background: url(../images/tp_bg2.jpg) no-repeat; width:418px; height:317px;}
+print('Sujeet, static dir: ', STATIC_DIR)
 .tp_bg3{ display:inline; clear: left; float:left;  background: url(../images/tp_bg3.jpg) no-repeat; width:950px; height:60px; padding:0 0 0 50px; }
 .abt_tp_bg3{ display:inline; clear: left; float:left;  background: url(../images/abt_tp_bg3.jpg) no-repeat; width:1000px; height:60px; }
 .tp_abt{ float:left; width:60px; font: bold 11px/15px arial; color:#666768; margin:28px 0px 0px 55px; text-decoration:none;}
