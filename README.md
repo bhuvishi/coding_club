@@ -10,8 +10,10 @@ Create base dir and env.
 Clone project to your machine.
 
 	git clone  https://github.com/bhuvishi/coding_club.git
+	cd coding_club
 
 Install require packages
+
 	pip install Django==2.1.9 djangorestframework==3.10.0 zappa
 	pip install django-s3-storage
 	pip install -r requirements.txt
