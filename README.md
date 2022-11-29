@@ -2,6 +2,7 @@
 ## Running project
 
 Create base dir and env.
+
 	mkdir coding_club_base && cd coding_club_base
 	python -m venv env
 	source env/bin/activate
