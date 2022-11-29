@@ -1,7 +1,7 @@
 	
 ## Running project
 
-# Create base dir and env.
+Create base dir and env.
 	mkdir coding_club_base && cd coding_club_base
 	python -m venv env
 	source env/bin/activate
@@ -24,7 +24,7 @@ Run your server on your localhost
 
 	python3 manage.py runserver
 
-
-zappa init
-zappa deploy dev
+Zappa deploy
+	zappa init
+	zappa deploy dev
 
