@@ -14,8 +14,6 @@ Clone project to your machine.
 
 Install require packages
 
-	pip install Django==2.1.9 djangorestframework==3.10.0 zappa
-	pip install django-s3-storage
 	pip install -r requirements.txt
 
 Migrate project
