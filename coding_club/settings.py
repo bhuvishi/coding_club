@@ -20,8 +20,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static_root")
 # STATIC_ROOT = '/tmp/static_root'
 # MEDIA_DIR = os.path.join(BASE_DIR, "media")
 
-S3_BUCKET_NAME = "dspskcodingclubstatic"
+S3_BUCKET_NAME = "dspskcodingclubrepo"
 STATICFILES_STORAGE = "django_s3_storage.storage.StaticS3Storage"
+AWS_ACCESS_KEY_ID = 'AKIAVTUKMMFSTLLNQI5U'
+AWS_SECRET_ACCESS_KEY = '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'
+print('Sujeet access keys: ', AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY)
 AWS_S3_BUCKET_NAME_STATIC = S3_BUCKET_NAME
 # to serve the static files from your s3 bucket
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % S3_BUCKET_NAME
@@ -139,7 +142,7 @@ USE_TZ = True
 
 # MEDIA_URL = '/media/'
 # STATIC_URL = '/static/'
-print('Sujeet static dir: ', STATIC_DIR)
+print('Sujeet static dir new: ', STATIC_DIR)
 STATICFILES_DIRS = [
     STATIC_DIR,
 #   MEDIA_DIR,
