@@ -27,6 +27,7 @@ Run your server on your localhost
 
 Zappa deploy
 
-	zappa init
 	zappa deploy dev
+	zappa update dev
+	zappa manage dev "collectstatic --noinput"
 
