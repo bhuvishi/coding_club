@@ -17,7 +17,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATES_DIR = os.path.join(BASE_DIR, "templates")
 STATIC_DIR = os.path.join(BASE_DIR, "static")
 STATIC_ROOT = os.path.join(BASE_DIR, "static_root")
-MEDIA_DIR = os.path.join(BASE_DIR, "media")
+# STATIC_ROOT = '/tmp/static_root'
+# MEDIA_DIR = os.path.join(BASE_DIR, "media")
+
+S3_BUCKET_NAME = "dspskcodingclubstatic"
+STATICFILES_STORAGE = "django_s3_storage.storage.StaticS3Storage"
+AWS_S3_BUCKET_NAME_STATIC = S3_BUCKET_NAME
+# to serve the static files from your s3 bucket
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % S3_BUCKET_NAME
+STATIC_URL = "https://%s/" % AWS_S3_CUSTOM_DOMAIN
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
@@ -126,13 +134,13 @@ USE_TZ = True
 # STATIC_URL = 'static/'
 # STATICFILES_DIRS = [
 #     BASE_DIR + '/' + "web/static",
-# #     '/var/www/static/',
+#      '/var/www/static/',
 # ]
 
-MEDIA_URL = '/media/'
-STATIC_URL = '/static/'
+# MEDIA_URL = '/media/'
+# STATIC_URL = '/static/'
 print('Sujeet static dir: ', STATIC_DIR)
 STATICFILES_DIRS = [
     STATIC_DIR,
-    MEDIA_DIR,
+#   MEDIA_DIR,
 ]
