@@ -31,5 +31,6 @@ Zappa deploy
 	export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
 	zappa deploy dev
 	zappa update dev
+	python manage.py collectstatic
 	zappa manage dev "collectstatic --noinput"
 
