@@ -13,7 +13,7 @@
   <div id="innerblock">
     <!--top block starts here -->
     <div class="topblock">
-      <div class="tp_bg3"> <a href="index.html" class="nv_tx">Home Page</a> <a href="index.html" class="nv_tx">Projects</a> <a href="index.html" class="nv_tx">Contacts</a> </div>
+      <div class="tp_bg3"> <a href="{% url 'index' %}" class="nv_tx">Home Page</a> <a href="{% url 'index' %}" class="nv_tx">Projects</a> <a href="{% url 'index' %}" class="nv_tx">Contacts</a> </div>
       <div class="tp_bg1"> </div>
     </div>
     <!--top block ends here -->
@@ -56,11 +56,11 @@
     <!--content panel ends here -->
     <!--footer panel starts here -->
     <div class="ft_bg">
-      <a href="index.html" class="ft_home">Home</a>
+      <a href="{% url 'index' %}" class="ft_home">Home</a>
       <img src="{% static 'images/ft_bar.gif' %}"  width="1" height="11" alt="" class="ft_bar" />
-      <a href="index.html" class="ft_spl">Projects</a>
+      <a href="{% url 'index' %}" class="ft_spl">Projects</a>
       <img src="{% static 'images/ft_bar.gif' %}"  width="1" height="11" alt="" class="ft_bar" />
-      <a href="index.html" class="ft_spl">Contacts</a>
+      <a href="{% url 'index' %}" class="ft_spl">Contacts</a>
       <img src="{% static 'images/ft_bar.gif' %}" width="1" height="11" alt="" class="ft_bar" />
     </div>
     <br />
