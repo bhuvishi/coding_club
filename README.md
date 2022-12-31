@@ -4,7 +4,7 @@
 Create base dir and env.
 
 	mkdir coding_club_base && cd coding_club_base
-	python -m venv env
+	python3 -m venv env
 	source env/bin/activate
 
 Clone project to your machine.
